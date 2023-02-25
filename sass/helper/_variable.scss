@@ -1,0 +1,77 @@
+// COLOR
+$color-black-0: #323232;
+$color-black-1: #000;
+$color-black-2: #222;
+$color-black-3: #434343;
+$color-black-4: #1b1b1b;
+$color-white-0: #fff;
+$color-white-1: rgba(255, 255, 255, .9);
+$color-white-2: rgba(255, 255, 255, .5);
+$color-gray-0: #7e7e7e;
+$color-gray-1: #595959;
+$color-gray-2: #333;
+$color-gray-3: #606060;
+$color-gray-4: #a4a4a4;
+$color-gray-5: #a9a8a8;
+$color-gray-6: #757575;
+$color-gray-7: #f5f5f5;
+$color-gray-8: #909090;
+$color-gray-9: #bbb;
+$color-gray-10: #7f7f7f;
+$color-gray-11: #a2a2a2;
+$color-gray-12: #5a5a5a;
+$color-dark-1: #6f7273;
+
+$color-yellow-0: #d6b161;
+$color-border-0: rgba(0, 0, 0, .1);
+$color-rgba-0: rgba(0, 0, 0, .5);
+$color-rgba-1: rgba(34, 34, 34, .05);;
+
+
+
+
+// FS
+$fs-0: 10px;
+$fs-1: 15px;
+$fs-2: 20px;
+$fs-3: 60px;
+$fs-4: 24px;
+$fs-5: 36px;
+
+// FW
+$fw-0: 400;
+$fw-1: normal;
+$fw-2: 300;
+
+// line-height
+$line-height-0: 1.5;
+$line-height-1: 100px;
+$line-height-2: normal;
+
+// padding
+$pd-0: 12px;
+$pd-1: 10px;
+$pd-2: 30px;
+$pd-3: 20px;
+$pd-4: 38px;
+$pd-5: 45px;
+$pd-6: 60px;
+$pd-7: 55px;
+
+
+// margin
+$mg-0: 2px;
+$mg-1: 20px;
+$mg-2: 30px;
+$mg-3: 15px;
+$mg-4: 10px;
+$mg-5: 50px;
+// border-radius
+$border-radius: 4px;
+$breakpoints: (
+    'screen-1': 1350px,
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+);

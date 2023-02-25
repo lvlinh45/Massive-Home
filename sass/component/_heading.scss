@@ -1,0 +1,32 @@
+.text__content {
+    text-align: center;
+    margin-bottom: 80px;
+    h3 {
+        letter-spacing: 2px;
+        @include textStyle($color-gray-2, $fs-4, $fw-1);
+        &.line {
+            &::after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 2px;
+                background-color: $color-gray-1;
+                margin: $mg-1 - 4 auto;
+            }
+        }
+    }
+    p {
+        @include textStyle($color-gray-0, $fs-1, $fw-0);
+        width: 50%;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+    @include responsive('large') {
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            width: 57%;
+        }
+    }
+}

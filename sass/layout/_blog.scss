@@ -1,0 +1,101 @@
+.blog {
+    .blog__contain {
+        .blog__contain-text {
+            padding: 30px;
+            ul {
+                cursor: pointer;
+                margin-bottom: $mg-4;
+                & li:hover {
+                    color: $color-yellow-0;
+                }
+                li {
+                    list-style: none;
+                    margin-right: $mg-4;
+                    @include textStyle($color-gray-8, $fs-0 + 2, $fw-1);
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                }
+            }
+            h3 {
+                @include textStyle($color-black-2, $fs-0 + 7, $fw-1);
+                letter-spacing: 1px;
+                margin-bottom: $mg-4;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover {
+                    color: $color-yellow-0;
+                }
+            }
+            h4 {
+                @include textStyle($color-gray-8, $fs-0 + 2, $fw-1);
+                letter-spacing: 2px;
+                margin-bottom: $mg-1 + 5;
+
+                span {
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:hover {
+                        color: $color-yellow-0;
+                    }
+                }
+            }
+            p {
+                @include textStyle($color-gray-0, $fs-1, $fw-1);
+                line-height: 30px;
+                margin-bottom: $mg-2;
+            }
+            h5 {
+                @include textStyle($color-gray-9, $fs-1, $fw-1);
+                letter-spacing: 1px;
+                cursor: pointer;
+                display: inline-block;
+                transition: 0.5s;
+                &:hover {
+                    color: $color-black-1;
+                }
+                i {
+                    margin-left: $mg-0 + 5;
+                }
+            }
+        }
+    }
+    .blog__contain-img {
+        img {
+            position: relative;
+        }
+        .blog__contain--content {
+            h3 {
+                position: absolute;
+                bottom: 0;
+                text-align: left;
+                @include textStyle($color-white-0, $fs-1, $fw-1);
+                margin-bottom: 0;
+                left: 15px;
+                right: 0;
+                padding: 12px 14px;
+                background-color: $color-rgba-0;
+                width: calc(92% + 2px);
+            }
+        }
+    }
+    @include responsive('large') {
+        .blog__contain-img {
+            img {
+                width: calc(96% + 2px);
+            }
+        }
+        .blog__contain {
+            .blog__contain-text {
+                padding: 30px 15px;
+            }
+        }
+    }
+    @include responsive("small") {
+        .blog__contain-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+ 

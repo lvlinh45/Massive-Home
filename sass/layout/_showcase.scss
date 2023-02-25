@@ -1,0 +1,83 @@
+.showcase {
+    .nav-tabs {
+        justify-content: center;
+        border: none;
+        .nav-link.active,
+        .nav-link:hover {
+            border: 1px solid transparent;
+        }
+        .nav-link.active {
+            color: $color-black-2;
+        }
+        .nav-link {
+            color: $color-gray-5;
+            margin: 0 $mg-3;
+            padding: 0;
+            font-size: $fs-0 + 4;
+            letter-spacing: 3px;
+        }
+    }
+    .showcase__portfolio {
+        margin-top: 50px;
+        .showcase__obtain {
+            padding: 0;
+            &:hover .showcase__info {
+                display: block;
+            }
+            img {
+                position: relative;
+            }
+            .showcase__info {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                padding: 50px;
+                text-align: center;
+                border: 20px solid $color-border-0;
+                background-color: $color-white-1;
+                transition: 0.5s;
+                display: none;
+                i {
+                    color: $color-black-2;
+                    font-size: 35px;
+                    margin-bottom: $mg-2;
+                    cursor: pointer;
+                    animation-duration: 0.5s;
+                }
+                h3 {
+                    @include textStyle($color-black-2, $fs-0 + 4, $fw-1);
+                    letter-spacing: 4px;
+                    margin-bottom: $mg-3;
+                    transition: 0.5s;
+                    &:hover {
+                        color: $color-yellow-0;
+                    }
+                    cursor: pointer;
+                    animation-duration: 0.5s
+                }
+                p {
+                    @include textStyle($color-gray-6, $fs-0 + 2, $fw-1);
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    transition: 0.5s;
+                    width: 102%;
+
+                    &:hover {
+                        color: $color-yellow-0
+                    }
+                    cursor: pointer;
+                    animation-duration: 0.5s
+                }
+            }
+        }
+    }
+    @include responsive('small') {
+        .nav-tabs {
+            .nav-link {
+                padding: 0 3px;
+            }
+        }
+    }
+}

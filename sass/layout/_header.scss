@@ -1,0 +1,105 @@
+header {
+    z-index: 99999;
+    overflow: hidden;
+    position: absolute;
+    // margin: 0 auto;
+    width: 100%;
+    nav {
+        padding: 0 38px !important;
+    }
+    .nav-item {
+        position: relative;
+        &:hover .nav-link {
+            color: $color-yellow-0;
+        }
+        .nav-link {
+            transition: all 0.2s;
+            font-size: $fs-0 + 3;
+            color: $color-white-0;
+            padding: 0 $pd-0 + 4 !important;
+            line-height: $line-height-1;
+            &.active {
+                color: $color-yellow-0;
+            }
+            i {
+                margin-right: $mg-0 + 3;
+            }
+            span {
+                margin-left: $mg-0;
+            }
+            &.line {
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 14px;
+                    width: 1.5px;
+                    background-color: $color-white-0;
+                    position: absolute;
+                    right: 0;
+                    top: 42%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        .navbar {
+            background-color: #0a0a0a;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            .navbar-toggler {
+                outline: none;
+                color: $color-white-0;
+            }
+            .navbar-brand {
+                img {
+                    width: 52px;
+                }
+            }
+            .navbar-nav {
+                background-color: $color-white-0;
+                .nav-item {
+                    .nav-link {
+                        line-height: 20px;
+                        padding: 12px 20px !important;
+                        color: $color-gray-2;
+                        border-bottom: solid 1px #f0f0f0;
+                        &.active {
+                            color: $color-yellow-0;
+                        }
+                        &:hover {
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#headerFixed {
+    background-color: $color-black-1;
+    position: fixed;
+    top: 0;
+    width: 101%;
+    transform: translate(-50%, -100%);
+    z-index: 100;
+    transition: all 0.5s;
+    height: 60px;
+    .navbar-nav {
+        margin-bottom: 46px;
+    }
+    .nav-link {
+        line-height: 60px;
+    }
+    .navbar-brand {
+        img {
+            width: 60px;
+            margin-bottom: 46px;
+        }
+    }
+    @include responsive("large") {
+        display: none;
+    }
+}

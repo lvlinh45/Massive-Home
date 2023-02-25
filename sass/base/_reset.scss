@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background-color: $color-yellow-0;
+    color: $color-white-0;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $color-black-0;
+    font-size: $fs-1;
+    font-weight: $fw-0;
+    line-height: $line-height-0;
+    
+}

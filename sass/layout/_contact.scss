@@ -1,0 +1,57 @@
+.contact {
+    background-image: url('../../img/bn.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 480px;
+    position: relative;
+    .contact__content {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h3 {
+            @include textStyle($color-yellow-0, $fs-1 + 1, $fw-1);
+            letter-spacing: 3px;
+            margin-bottom: 0;
+        }
+        p {
+            @include textStyle($color-white-0, $fs-4 + 12, $fw-1);
+            letter-spacing: 2px;
+
+        }
+        button {
+            margin-top: $mg-2;
+            transition: 0.5s;
+            &:hover {
+                background-color: $color-white-0;
+                color: $color-black-1;
+            }
+        }
+    }
+    @media screen and (min-width: 1200px) {
+       
+            .contact__content {
+                p {
+                    width: 102%;
+                }
+            }
+        
+    }
+    @include responsive('large') {
+        .contact__content {
+            width: 66%;
+            p {
+                font-size: 26px
+            }
+        }
+    };
+    @include responsive('small') {
+        .contact__content {
+            width: 100%;
+           
+        }
+    };
+}

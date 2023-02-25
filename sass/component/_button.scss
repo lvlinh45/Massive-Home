@@ -1,0 +1,8 @@
+.btn--black {
+   @include styleButton($color-white-0, $color-black-2, $color-black-2, $fs-0 + 4, $fw-1, $pd-0 + 3, $pd-0 + 3);
+
+}
+.btn--yellow {
+   @include styleButton($color-white-0, $color-yellow-0, transparent, $fs-0 + 4, $fw-1, $pd-0 + 3, $pd-4);
+
+}
